@@ -5,13 +5,13 @@ import main.java.server.myExceptions.NullException;
 import main.java.server.myExceptions.NonPairException;
 import main.java.server.myExceptions.PalindromeException;
 
-public class Server {
+class Server {
 
-    public void retrieveString(String str) throws PalindromeException {
+    void retrieveString(String str) throws PalindromeException {
         isPalindrome(str);
     }
 
-    public void retrieveInt(int num) throws NonPairException, HundredException {
+    void retrieveInt(int num) throws NonPairException, HundredException {
         if (num <= 100) {
             if (num % 2 == 0) {
                 System.out.println("Its pair number");
@@ -24,7 +24,7 @@ public class Server {
     }
 
 
-    public void retrieveObject(Object o) throws NullException {
+    void retrieveObject(Object o) throws NullException {
         if (o == null) {
             throw new NullException("Object is empty");
         } else {
