@@ -11,22 +11,20 @@ public class Main  {
         String str = "nagan";
         int number = 101;
         Object obj = server;
-//1
+
         try {
             server.retrieveString(str);
         } catch (PalindromeException e) {
             System.err.println(e.getMessage());
         }
 
-//2
+
         try {
             server.retrieveInt(number);
-        } catch (NonPairException e) {
-            System.err.println(e.getMessage());
-        } catch (HundredException e) {
+        } catch (NonPairException | HundredException e) {
             System.err.println(e.getMessage());
         }
-//3
+
         try {
             server.retrieveObject(obj);
         } catch (NullException e) {

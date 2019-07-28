@@ -23,7 +23,6 @@ class Server {
         }
     }
 
-
     void retrieveObject(Object o) throws NullException {
         if (o == null) {
             throw new NullException("Object is empty");
@@ -31,7 +30,6 @@ class Server {
             System.out.println("It's ok");
         }
     }
-
 
     private void isPalindrome(String str) throws PalindromeException {
         int n = str.length();
@@ -41,11 +39,7 @@ class Server {
             }
         }
         System.out.println("Its palindrome");
-
     }
 
 }
 
-//retrieveString
-//retrieveInt
-//retrieveObject
